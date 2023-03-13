@@ -14,7 +14,7 @@ The simplest version of the algorithm is quite small:
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define UPPER_LIMIT     10000000
+#define UPPER_LIMIT     16777216
 
 void simple_sieve(void) {
 
@@ -42,9 +42,9 @@ void simple_sieve(void) {
 }
 ```
 
-It is also quite fast, but the downside is its requirement of large memory area. The sample above calculates primes up to 10 million and
-requires a byte for each number considered, was it a prime or not. To be frank, nowadays 9.5 MiB of memory consumption seems to be quite
-modest.
+It is also reasonably fast, but the downside is its requirement of large memory area. The sample above calculates primes up to 16+ million
+and requires a byte for each number considered, was it a prime or not. To be frank, nowadays 16 MiB of memory consumption does not seem
+that much, but still is wasteful.
 
 
 Segmented sieve

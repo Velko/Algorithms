@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define UPPER_LIMIT     10000000
+#define UPPER_LIMIT     16777216
 
 void simple_sieve(void) {
 
