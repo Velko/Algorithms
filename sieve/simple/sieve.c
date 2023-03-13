@@ -1,15 +1,3 @@
-Sieve of Eratosthenes
-=====================
-
-Sieve of Eratosthenes is an algorithm for finding prime numbers. On top on the classic one, there are few modernizations.
-
-
-Simple sieve
-------------
-
-The simplest version of the algorithm is quite small:
-
-```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -40,17 +28,8 @@ void simple_sieve(void) {
     // remember to release the memory ;-)
     free(candidates);
 }
-```
 
-It is also quite fast, but the downside is its requirement of large memory area. The sample above calculates primes up to 10 million and
-requires a byte for each number considered, was it a prime or not. To be frank, nowadays 9.5 MiB of memory consumption seems to be quite
-modest.
-
-
-Segmented sieve
----------------
-
-
-Incremental sieve
------------------
-
+int main(void) {
+    simple_sieve();
+    return 0;
+}
